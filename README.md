@@ -8,10 +8,12 @@ Each lab is organized in a separate folder under the `Labs/` directory and focus
 
 ## 📁 Repository Structure
 
+```
 SWT/
 └─ Labs/
-├─ Lab2_UnitTest
-├─ DemoCalculator
+   ├─ Lab2_UnitTest
+   └─ DemoCalculator
+```
 
 ---
 
