@@ -11,7 +11,8 @@ Each lab is organized in a separate folder under the `Labs/` directory and focus
 ```
 SWT/
 └─ Labs/
-   ├─ Lab2_UnitTest
+   ├─ Lab2_Unit Test for Account Registration
+   ├─ Lab2_Static Testing & Unit Testing for Insurance Claim System
    └─ DemoCalculator
 ```
 
