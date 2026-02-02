@@ -33,6 +33,27 @@ SWT/
 📂 Location:
 Labs/Lab2_UnitTest
 
+### 🔹 Lab 3 – Static Testing & Unit Testing for Insurance Claim System
+- Technology: **Java, Maven, JUnit 5**
+- Focus:
+  - Static testing (code review)
+  - Identifying defects without executing code
+  - Correcting coding logic and coding standard issues
+  - Unit testing using GIVEN – WHEN – THEN pattern
+- Main activities:
+  - Code review and defect identification following ISTQB principles
+  - Fixing business logic and coding standard issues
+  - Designing test cases and bug reports
+  - Writing unit tests for core business logic
+- Business rules tested:
+  - Claim status transitions (Pending → Approved / Rejected)
+  - Claim amount validation
+  - Payout calculation (85% for approved claims)
+  - Restricting claim updates after approval
+
+📂 Location:  
+`Labs/Lab3`
+
 ---
 
 ## ⚙️ Technologies Used
