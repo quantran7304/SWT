@@ -1,0 +1,19 @@
+.seller-sales-analytics {
+  padding: 20px;
+  background-color: #f5f7fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.seller-sales-analytics h2 {
+  color: #3ca267;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.seller-chart-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,154 @@
+.testimonials-wrapper {
+    background: #fdf9f8;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-start;
+}
+
+.testimonials-left {
+    flex: 1;
+    min-width: 280px;
+}
+
+.testimonials-title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.testimonials-description {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.testimonials-stats {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.testimonials-stats h3 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.testimonials-stats p{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.stars {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffc107;
+}
+
+.testimonials-right {
+    flex: 1;
+    min-width: 280px;
+}
+
+.testimonial-box {
+    padding: 30px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.testimonial-avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-header h4 {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.testimonial-header span {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #888;
+}
+
+.quote-mark {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 32px;
+    color: #111;
+    opacity: 0.2;
+}
+
+.testimonial-text {
+    min-height: 120px;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.testimonial-nav button {
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 40px;
+    width: 60px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.testimonial-nav button:hover{
+    background: #1f4b43;
+    color: #fff;
+    border: 1px solid #1f4b43;
+}
+.testimonials-brands {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.testimonials-brands p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.brand-logos{
+    display:flex;
+    justify-content:center;
+    gap: 80px;
+    align-items: center;
+}
+.brand-logos img {
+    height: 28px;
+    opacity: 0.8;
+}

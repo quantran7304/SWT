@@ -1,0 +1,75 @@
+.admin-sidebar {
+  background: linear-gradient(135deg, #25594d, #3ca267);
+  color: #fff;
+  width: 280px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+.admin-sidebar-header img {
+  margin-left: 13px;
+  width: 170px;
+  height: auto;
+
+
+}
+.admin-sidebar-header h2 {
+  font-size: 2.2rem;
+  margin-top: 10px; ;
+  margin-left: 65px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.admin-sidebar-nav ul {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.admin-sidebar-nav li {
+  margin: 1.5rem 0;
+  font-size: 17px;
+  padding: 0 1rem;
+}
+
+.admin-sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.admin-sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.admin-sidebar-nav i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  width: 24px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 280px;
+  }
+}
+

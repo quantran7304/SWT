@@ -1,0 +1,59 @@
+.agents-container {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.agents-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.agents-subtitle {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+.agents-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.agent-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 280px;
+    height: 315px;
+    transition: transform 0.3s ease;
+}
+
+.agent-card:hover {
+    transform: translateY(-5px);
+}
+
+.agent-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.agent-name {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.agent-role {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #959393;
+}

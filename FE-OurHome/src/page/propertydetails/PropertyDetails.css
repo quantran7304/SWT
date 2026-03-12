@@ -1,0 +1,560 @@
+/* General Container */
+.property-details {
+  margin-top: 100px; /* 👈 Giải pháp chính xác */
+  font-family: 'Poppins', sans-serif;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  position: relative;
+}
+.property-full-details {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* 👈 tự chia đều */
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+/* ✅ Fix căn lề trái cho toàn bộ section */
+.property-description,
+.property-full-details,
+.amenities,
+.neighborhood,
+.location-map {
+  text-align: left;
+}
+
+.property-description h2,
+.property-full-details h2,
+.amenities h2,
+.neighborhood h2,
+.location-map h2 {
+  text-align: left !important;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #004d40;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.detail-item {
+  background-color: #f9f9f9;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  color: #333;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+/* Main Layout */
+.property-main {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.property-main-left {
+  flex: 2.5;
+  min-width: 0;
+}
+
+.property-main-right {
+  flex: 1.2;
+  max-width: 380px;
+  min-width: 300px;
+  align-self: flex-start;
+  z-index: 2;
+  position: relative;
+}
+
+/* Header Section */
+.property-header {
+  margin-bottom: 3rem;
+}
+
+.main-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.main-image img:hover {
+  transform: scale(1.02);
+}
+
+.main-image img[src=""] {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.6rem;
+  scrollbar-width: thin;
+  scrollbar-color: #00897b #f1f1f1;
+}
+
+.gallery img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery:empty {
+  display: none;
+}
+
+/* Property Info Section */
+.property-info1 {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.property-info1-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0; /* Đảm bảo không có khoảng cách thừa */
+  margin-top: 15px;
+  margin-left:30px;
+}
+
+.property-info1 h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #004d40;
+  margin-bottom: 7px; /* Loại bỏ margin để sát với location */
+  line-height: 1.2;
+}
+
+.property-info1 .location {
+  color: #757575;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  gap: 0.4em;
+}
+
+.property-info1 .location i {
+  color: #b0bec5;
+  font-size: 1.2em;
+}
+
+.property-info1 .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  color: #424242;
+  min-width: 200px;
+  font-weight: 400;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+.property-info1 .details span {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #424242;
+}
+
+.property-info1 .details i {
+  color: #00796b;
+}
+
+/* Pricing Section */
+.pricing {
+  background: #f5f6f5;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.8rem 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  max-width: 100%;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #d32f2f;
+  margin-bottom: 0.5rem;
+}
+
+.move-in {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.move-in label {
+  font-weight: 600;
+  color: #424242;
+  flex: 1 1 100px;
+}
+
+.move-in input {
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  flex: 2 1 150px;
+  font-size: 0.95rem;
+}
+
+.move-in input:focus {
+  border-color: #00796b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+}
+
+.additional-costs p {
+  margin: 0.6rem 0;
+  color: #757575;
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.additional-costs button,
+.pricing button {
+  background: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.4rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.additional-costs button:hover,
+.pricing button:hover {
+  background: #004d40;
+  transform: translateY(-2px);
+}
+
+/* Description, Amenities, Neighborhood, Location, Policy */
+.property-description,
+
+.amenities,
+.neighborhood,
+.location-map,
+.policy-details {
+  margin-bottom: 3rem;
+}
+
+.property-description h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #004d40;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  text-align: left; /* 👈 FIX: căn lề trái */
+}
+
+.amenities h2,
+.neighborhood h2,
+.location-map h2,
+.policy-details h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #004d40;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+
+.property-description p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  text-align: left;
+  margin-left: 1.2rem;
+}
+
+.neighborhood p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.amenities-list:empty::after {
+  content: "No amenities available.";
+  color: #757575;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.amenities-list span {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.3rem;
+  background: #f5f6f5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.amenities-list span:hover {
+  background: #e0f2f1;
+  transform: translateX(5px);
+}
+
+.amenities-list i {
+  margin-right: 0.6rem;
+  color: #00796b;
+}
+
+.location-map .map img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.location-map .map img:hover {
+  transform: scale(1.02);
+}
+
+.policy-sections {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.policy-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.policy-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #004d40;
+  font-weight: 600;
+}
+
+.policy-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-section li {
+  margin-bottom: 0.7rem;
+  color: #757575;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.policy-section p {
+  color: #757575;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Footer Section */
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .property-main {
+    flex-direction: column;
+  }
+  .property-main-right {
+    max-width: 100%;
+  }
+
+  .property-main-right {
+    flex: 0 0 360px; /* cố định chiều rộng */
+    width: 360px;
+    max-width: 380px;
+    min-width: 300px;
+    position: relative;
+    z-index: 2;
+  }
+  .property-info-meta {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .pricing {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .property-main-left {
+    flex: 2.5;
+    min-width: 0;
+    max-width: calc(100% - 400px);
+    overflow: hidden; /* ✅ NGĂN tràn layout khi nội dung quá rộng */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .property-details {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+  .main-image img {
+    height: 320px;
+  }
+  .gallery img {
+    width: 150px;
+    height: 120px;
+  }
+  .property-info1 h1 {
+    font-size: 1.9rem;
+  }
+  .property-info1 .details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .property-description, .amenities, .neighborhood, .location-map, .policy-details {
+    margin-bottom: 2rem;
+
+  }
+  .property-description h2, .amenities h2, .neighborhood h2, .location-map h2, .policy-details h2 {
+    font-size: 1.4rem;
+
+  }
+  .policy-sections {
+    flex-direction: column;
+  }
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .location-map .map img {
+    height: 300px;
+  }
+}
+
+.report-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.report-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.report-options button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f9f9f9;
+  cursor: pointer; /* Sửa từ report-icon thành pointer */
+}
+
+.report-options button:hover {
+  background: #e0e0e0;
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.report-actions button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Sửa từ report-icon thành pointer */
+}
+
+.report-actions button:first-child {
+  background: #007bff;
+  color: white;
+}
+
+.report-actions button:first-child:hover {
+  background: #0056b3;
+}
+
+.report-actions button:last-child {
+  background: #ccc;
+  color: black;
+}
+
+.report-actions button:last-child:hover {
+  background: #bbb;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Giữ nguyên các phần CSS khác của bạn, nếu có */

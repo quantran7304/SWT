@@ -1,0 +1,81 @@
+.seller-sidebar {
+  background: linear-gradient(135deg, #25594d, #3ca267);
+  color: #fff;
+  width: 280px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.seller-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+.seller-sidebar-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+  color: #fff;
+}
+.seller-sidebar-header img {
+  margin-left: 33px;
+  width: 170px;
+  height: auto;
+}
+.seller-sidebar-nav ul {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+
+.seller-sidebar-nav li {
+  margin: 1.5rem 0;
+  font-size: 17px;
+  padding: 0 1rem;
+}
+
+
+.seller-sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+
+.seller-sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+
+.seller-sidebar-nav i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  width: 24px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .seller-sidebar {
+    width: 280px;
+  }
+}
+
+
+

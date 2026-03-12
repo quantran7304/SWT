@@ -1,0 +1,24 @@
+.admin-dashboard-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .admin-main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+  }
+  
+  .admin-dashboard-content {
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-main-content {
+      margin-left: 280px;
+    }
+  }

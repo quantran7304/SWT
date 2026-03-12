@@ -1,0 +1,141 @@
+.wishlist-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  padding: 20px;
+  margin-top: 80px; /* Tránh bị che bởi header */
+  min-height: calc(100vh - 150px);
+  color: #333;
+}
+
+
+.banner {
+  background: linear-gradient(135deg, #25594d, #3ca267);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.banner h1 {
+  font-size: 2.8em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.banner p {
+  font-size: 1.3em;
+  color: #ecf0f1;
+}
+
+
+.wishlist-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+
+.wishlist-section h2 {
+  font-size: 2.2em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+
+.empty-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+
+.wishlist-item {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wishlist-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.wishlist-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block; /* Thêm để đảm bảo hiển thị */
+}
+
+
+.wishlist-details {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wishlist-details h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+
+.wishlist-price {
+  font-size: 1.3em;
+  color: #e74c3c;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
+.wishlist-location {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+
+.remove-button {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+
+.remove-button:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+}

@@ -1,0 +1,281 @@
+.agent-details-wrapper {
+    padding-top: 100px; /* Increased to match Navbar height (adjust if needed) */
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Optional: matches the light background in the image */
+}
+
+
+.agent-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+}
+
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+.agent-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #fff; /* White background for the header */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    float: left;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+
+
+.agent-details-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-radius: 50%
+}
+
+
+.agent-info {
+    flex: 1;
+}
+
+
+.agent-details-name {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+
+.agent-details-role {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+}
+
+
+.agent-details-sales {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+.agent-content {
+    flex-direction: column;
+    margin-left: 350px;
+    margin-top: 50px;
+    width: 85%;
+}
+.ag-property-card {
+    width: 240px;
+    height: 240px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    position: relative;
+}
+.ag-properties-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ag-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ag-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.ag-detail-info-overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.ag-detail-info-overlay h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1rem;
+    margin-left: 15px;
+}
+.ag-detail-info-overlay p {
+    color: #404346;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+    margin-left: 15px;
+}
+.ag-detail-info-overlay strong {
+    color: #d32f2f;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1px;
+    float: left;
+    margin-left: 1.7rem;
+}
+.ag-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: #444;
+    margin-left: auto;
+    margin-right: 7px;
+    margin-top: 11px;
+    gap: 0.35rem;
+}
+.properties-sold,
+.customer-comments {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    margin-top: 30px;
+}
+.properties-sold{
+    font-size: 20px;
+}
+.customer-comments h3 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    color: #333;
+}
+
+
+.properties-list,
+.comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.property-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.property-item:last-child {
+    border-bottom: none;
+}
+
+
+.comment-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+
+.comment-name {
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 5px;
+}
+
+
+.comment-text {
+    color: #555;
+    margin: 0 0 5px;
+}
+
+
+.comment-rating {
+    color: #f39c12;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .agent-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .agent-details-image {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .property-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.pagination-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+}
+
+.pagination-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

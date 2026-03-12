@@ -1,0 +1,197 @@
+/* === PROPERTY LIST STYLES === */
+
+.featured-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.featured-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #1b4332; /* Xanh lá đậm */
+    background: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    color: #1b4332; /* Chữ xanh lá đậm */
+}
+
+.filter-buttons button.active {
+    background: #1b4332; /* Nền xanh lá đậm khi active */
+    color: #fff;
+    border-color: #1b4332;
+}
+
+.properties-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem; /* Giữ khoảng cách đều */
+    justify-content: center;
+}
+
+.property-card {
+    width: 380px; /* Khung vuông */
+    height: 380px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    position: relative;
+}
+
+.property-card:hover {
+    transform: translateY(-6px);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Đảm bảo hình vuông */
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.badges {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.badge.for-sale,
+.badge.for-rent {
+    background-color: #2f6b3a; /* Xanh lá đậm giống hình */
+}
+
+.badge.featured {
+    background-color: #f4c430; /* Vàng giống hình */
+    color: #000;
+}
+
+.property-detail-info-overlay {
+    position: absolute;
+    bottom: 15px; /* Cách đều từ dưới */
+    left: 15px; /* Cách đều từ trái */
+    right: 15px; /* Cách đều từ phải */
+    background: rgba(255, 255, 255, 0.9); /* Nền trắng mờ */
+    padding: 1rem; /* Padding bên trong */
+    border-radius: 12px; /* Bo góc đẹp */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.property-detail-info-overlay h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1rem;
+    margin-left: 15px;
+}
+
+.property-detail-info-overlay p {
+    color: #404346;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+    margin-left: 15px;
+}
+
+.property-detail-info-overlay strong {
+    color: #d32f2f;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1px;
+    float: left;
+    margin-left: 1.7rem; /* Thêm margin-left để di chuyển sang phải */
+}
+
+.property-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    color: #444;
+    margin-left: auto;
+    margin-right: 10px;
+    gap: 1.5rem;
+}
+
+.property-info span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.view-all-btn {
+    padding: 0.8rem 1.8rem;
+    background-color: #f4c430; /* Màu vàng giống nút See All */
+    color: #000;
+    border: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #e6b800;
+}

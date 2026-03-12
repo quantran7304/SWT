@@ -1,0 +1,214 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #1f4b43 !important;
+  padding: 4rem;
+
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+
+.footer-left .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #004b3f;
+  letter-spacing: 0.5px;
+}
+
+.footer-left p {
+  margin-top: 10px;
+  color: #fff !important;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.social-icons a:hover {
+  color: #004b3f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  gap: 4rem;
+  min-width: 400px;
+}
+
+.footer-column h4,
+.footer-subscribe h4 {
+  color: #FFFFFF78;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1.35;
+}
+
+.footer-column a {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-column a:hover {
+  transform: translateX(5px);
+}
+
+.footer-subscribe {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-subscribe-container {
+  padding: 20px;
+  max-width: 400px;
+  color: #a0b2a1;
+  font-family: Arial, sans-serif;
+}
+
+.footer-subscribe-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color:  #FFFFFF78;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-subscribe-input {
+  flex: 1;
+  padding: 8px 0;           /* bỏ padding trái phải */
+  font-size: 14px;
+  border: none;             /* bỏ viền */
+  border-bottom: 2px solid #e4dbd4;
+  background-color: transparent;
+  color: #e4e7e4;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.footer-subscribe-input::placeholder {
+  color: #fff;
+}
+
+.footer-subscribe-input:focus {
+  border-bottom-color: #1b9e9e;
+}
+
+/* Input với underline cho .footer-subscribe-alt-input */
+
+.footer-subscribe-alt-input {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid #556b56;
+  background-color: transparent;
+  color: #e6f0e6;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.footer-subscribe-alt-input::placeholder {
+  color: #8fae8f;
+}
+
+.footer-subscribe-alt-input:focus {
+  border-bottom-color: #8fbc8f;
+}
+
+.footer-subscribe-button {
+  background: #FFFFFF14;
+  color: #e4e7e4;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-subscribe-button:hover {
+  background-color: #1b9e9e;
+}
+
+.footer-subscribe-text {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: #fffaf5;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 0 2rem;
+  }
+
+  .footer-links {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 0;
+  }
+
+  .footer-container {
+    padding: 0 1.5rem;
+  }
+
+  .footer-links {
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-subscribe {
+    min-width: 100%;
+  }
+}

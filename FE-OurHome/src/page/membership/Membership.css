@@ -1,0 +1,161 @@
+.membership-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  padding: 20px;
+  margin-top: 80px; /* Tránh bị che bởi header */
+  min-height: calc(100vh - 150px);
+  color: #333;
+}
+
+.banner {
+  background: linear-gradient(135deg, #25594d, #3ca267);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+  font-size: 2.8em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.3em;
+  color: #ecf0f1;
+}
+
+.plans-section, .faq-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.plans-section h2, .faq-section h2 {
+  font-size: 2.2em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.plan-card {
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.plan-header {
+  margin-bottom: 20px;
+}
+
+.plan-header h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.plan-price {
+  display: block;
+  font-size: 1.5em;
+  color: #e74c3c;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.plan-description {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.plan-benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.plan-benefits li {
+  font-size: 1.1em;
+  color: #34495e;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.check-mark {
+  color: #27ae60;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.plan-button {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.plan-button:hover {
+  background: linear-gradient(135deg, #d35400, #e67e22);
+  transform: scale(1.05);
+}
+
+.faq-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+
+.faq-item h3 {
+  font-size: 1.3em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.faq-item p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+

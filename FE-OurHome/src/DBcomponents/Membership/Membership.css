@@ -1,0 +1,142 @@
+.member-view-toggle {
+    display: flex;
+    gap: 700px;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+}
+
+.member-toggle-btn {
+    background-color: #3ca267;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    order: 1;
+}
+
+.member-toggle-btn:hover {
+    background-color: #2e7d50; /* Tối hơn một chút so với #3ca267 */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+    max-width: 300px; /* Giới hạn chiều rộng tối đa */
+}
+
+.filter-label {
+    color: #666;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .member-view-toggle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .search-container {
+        max-width: 100%; /* Mở rộng toàn bộ chiều rộng trên màn hình nhỏ */
+    }
+}
+.membership-form {
+    max-width: 500px; /* Giới hạn chiều rộng form */
+    margin: 0 auto; /* Căn giữa form */
+    padding: 20px; /* Khoảng cách trong form */
+    border: 1px solid #ccc; /* Thêm viền nhẹ */
+    border-radius: 8px; /* Bo góc form */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+}
+
+.membership-form h1 {
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ đậm hơn */
+}
+
+.membership-form form div {
+    margin-bottom: 15px; /* Khoảng cách giữa các input */
+}
+
+.membership-form label {
+    display: block; /* Đưa label lên trên input */
+    font-weight: bold; /* Chữ in đậm */
+    margin-bottom: 5px; /* Khoảng cách giữa label và input */
+    color: #555; /* Màu chữ xám nhạt */
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="number"] {
+    width: 100%; /* Input chiếm toàn bộ chiều rộng của div */
+    padding: 8px; /* Khoảng cách trong input */
+    border: 1px solid #ccc; /* Viền input */
+    border-radius: 4px; /* Bo góc input */
+    font-size: 14px; /* Kích thước chữ */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+
+.membership-form input[type="text"]:focus,
+.membership-form input[type="number"]:focus {
+    outline: none; /* Loại bỏ viền focus mặc định */
+    border-color: #4CAF50; /* Màu viền khi focus (giữ màu xanh lá cây nhẹ) */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Hiệu ứng bóng khi focus */
+}
+
+.membership-form button {
+    padding: 10px 20px; /* Kích thước nút */
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+    border: none; /* Loại bỏ viền mặc định */
+    border-radius: 4px; /* Bo góc nút */
+    cursor: pointer; /* Con trỏ tay khi hover */
+    font-size: 14px; /* Kích thước chữ */
+}
+
+.membership-form button[type="submit"] {
+    background-color: #4CAF50; /* Giữ màu xanh lá cây */
+    color: white; /* Chữ trắng */
+}
+
+.membership-form button[type="button"] {
+    background-color: #ccc; /* Giữ màu xám */
+    color: white; /* Chữ đậm */
+}
+
+.membership-form button:hover {
+    opacity: 0.9; /* Hiệu ứng mờ khi hover */
+}
+
+.membership-form p {
+    margin: 10px 0; /* Khoảng cách cho thông báo lỗi */
+    padding: 5px; /* Lót trong thông báo */
+    border-radius: 4px; /* Bo góc thông báo */
+}
+.button-container {
+    text-align: center; /* Căn giữa các nút */
+    margin-top: 20px; /* Khoảng cách trên của nút so với input */
+}

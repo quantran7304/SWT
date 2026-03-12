@@ -1,0 +1,182 @@
+.admin-users {
+    padding: 20px;
+    background-color: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .admin-users h2 {
+    color: #3ca267;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  
+  .admin-view-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .admin-toggle-btn {
+    background-color: #3ca267;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-toggle-btn:hover {
+    background-color: #3ca267;
+  }
+  
+  .admin-users-table {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  th {
+    background: #f8f9fa;
+    color: #3ca267;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  td {
+    color: #666;
+  }
+  
+  tr:hover td {
+    background: #f8f9fa;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-users-table {
+      overflow-x: scroll;
+    }
+    th, td {
+      min-width: 120px;
+    }
+  }
+
+.ban-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.ban-btn.banned {
+  color: red;
+}
+
+.ban-btn.unbanned {
+  color: green;
+}
+
+.admin-view-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.filter-select {
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.search-container {
+  display: flex;
+  flex-grow: 1; /* Makes the search input take up the remaining width */
+  max-width: 300px; /* Optional: limit the maximum width */
+  height: 33px;
+}
+
+.search-input {
+  flex-grow: 1; /* Expands to fill available space in the container */
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.1-search-btn {
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  border-radius: 0 4px 4px 0;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.1-search-btn:hover {
+  background-color: #0056b3;
+}
+.user-pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.user-pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.user-pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.user-pagination-button:hover:not(.user-active):not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.user-pagination-button.user-active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.user-pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.user-pagination-ellipsis {
+  padding: 8px 12px;
+  color: #666;
+}

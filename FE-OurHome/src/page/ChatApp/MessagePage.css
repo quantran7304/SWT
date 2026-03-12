@@ -1,0 +1,50 @@
+/* Message Page Wrapper */
+.main-content-with-navbar {
+    margin-top: 60px; /* Đúng bằng chiều cao Navbar */
+}
+
+.page-message-wrapper {
+  min-height: calc(100vh - 60px); /* Adjust 60px based on Navbar height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9; /* Matches ChatComponent's background */
+  padding: 20px;
+}
+
+/* Message Page Container */
+.page-message-container {
+  width: 100%;
+  max-width: 1200px; /* Limits width for large screens */
+  height: 75vh; /* Matches ChatComponent's height */
+  background-color: #f5f7fa; /* Matches ChatComponent's container background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 100px; /* Ensures space below Navbar */
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-message-wrapper {
+    padding: 10px;
+    align-items: flex-start; /* Aligns content to top on smaller screens */
+  }
+
+  .page-message-container {
+    height: auto; /* Allows content to expand naturally */
+    min-height: 60vh; /* Ensures minimum height for smaller screens */
+    margin-top: 10px; /* Reduced margin for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .page-message-wrapper {
+    padding: 5px;
+  }
+
+  .page-message-container {
+    margin-top: 5px; /* Minimal margin for very small screens */
+  }
+}

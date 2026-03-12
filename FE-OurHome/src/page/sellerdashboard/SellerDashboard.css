@@ -1,0 +1,32 @@
+.seller-dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.seller-main-content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+}
+
+.seller-dashboard-content {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .seller-main-content {
+    margin-left: 280px;
+  }
+}
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }

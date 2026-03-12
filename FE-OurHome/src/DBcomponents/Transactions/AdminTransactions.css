@@ -1,0 +1,202 @@
+.admin-transactions {
+  padding: 20px;
+  background-color: #f5f7fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-transactions h2 {
+  color: #3ca267;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.admin-transactions-table {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #f8f9fa;
+  color: #3ca267;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+td {
+  color: #666;
+}
+
+tr:hover td {
+  background: #f8f9fa;
+}
+
+.admin-status-pending {
+  background: #ffeb3b;
+  color: #f57f17;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.admin-status-completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.admin-status-canceled {
+  background: #ffebee;
+  color: #d32f2f;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .admin-transactions-table {
+    overflow-x: scroll;
+  }
+  th, td {
+    min-width: 120px;
+  }
+}
+
+.admin-pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.admin-pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.admin-pagination-button:hover:not(.admin-active):not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.admin-pagination-button.admin-active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.admin-pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.admin-pagination-ellipsis {
+  padding: 8px 12px;
+  color: #666;
+}
+.transaction-view-toggle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.transaction-search-container {
+  display: flex;
+  gap: 5px; /* Khoảng cách giữa các phần tử */
+  max-width: 400px;
+}
+
+.transaction-search-input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px; /* Độ rộng cố định cho từng input */
+  margin-right: 9px;
+}
+
+.transaction-search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.transaction-search-btn {
+  padding: 5px 10px;
+  border: 1px solid #3ca267; /* Thay đổi màu viền để khớp với nút xanh lá trong hình */
+  border-radius: 4px;
+  background-color: #3ca267; /* Màu xanh lá như trong hình */
+  color: white;
+  cursor: pointer;
+  margin-left: -15px;
+  margin-right: 7px;
+}
+
+.transaction-search-btn:hover {
+  background-color: #2f8150; /* Tùy chỉnh màu hover */
+}
+
+.transaction-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: -8px;
+}
+.transaction-filter-select1{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+margin-left: -8px;    }
+
+.transaction-filter-select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.transaction-filter-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .transaction-view-toggle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .transaction-search-container {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 10px; /* Tăng khoảng cách khi xuống dòng */
+  }
+  .transaction-search-input {
+    width: 100%; /* Đầy đủ chiều rộng trên màn hình nhỏ */
+  }
+}

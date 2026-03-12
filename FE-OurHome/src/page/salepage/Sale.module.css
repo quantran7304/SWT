@@ -1,0 +1,310 @@
+.bannerSection {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .bannerImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .bannerBar {
+    background-color: #004d40;
+    color: #fff;
+    padding: 1.5rem 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .bannerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bannerTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+  .propertiesCount {
+    font-size: 1rem;
+    color: #e0f2f1;
+    margin: 0.25rem 0 0;
+    font-weight: 300;
+  }
+  
+  .viewToggleButton {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .viewToggleButton:hover {
+    background-color: #00332a;
+  }
+  
+  .showFiltersButton {
+    display: none;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .saleContainer {
+    display: flex;
+    padding: 2rem;
+    background-color: #f5f7fa;
+    min-height: calc(100vh - 128px - 350px);
+  }
+  
+  .filters {
+    width: 25%;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-right: 2rem;
+    max-height: 500px; /* Đặt chiều cao tối đa */
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung vượt quá */
+  }
+  
+  .filters h2 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filterGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .filterGroup label {
+    display: block;
+    font-weight: 500;
+    color: #424242;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filterGroup input,
+  .filterGroup select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+  
+  .filterGroup input[type="date"] {
+    padding: 0.4rem;
+  }
+  
+  .clearFilters {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .clearFilters:hover {
+    background-color: #00796b;
+  }
+  
+  .propertiesList {
+    width: 75%;
+  }
+  
+  .propertiesList h1 {
+    font-size: 1.8rem;
+    color: #004d40;
+    margin-bottom: 0.5rem;
+  }
+  
+  .propertiesList p {
+    color: #757575;
+    margin-bottom: 1.5rem;
+  }
+  
+  .propertyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .propertyGrid.listView {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .propertyCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .propertyCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .propertyInfo {
+    padding: 1rem;
+  }
+  
+  .status {
+    display: inline-block;
+    background-color: #c8e6c9;
+    color: #388e3c;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .type {
+    color: #757575;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .propertyInfo h3 {
+    font-size: 1.2rem;
+    color: #004d40;
+    margin-bottom: 0.5rem;
+  }
+  
+  .propertyInfo p {
+    margin: 0.25rem 0;
+    color: #757575;
+  }
+  
+  .price {
+    font-weight: 600;
+    color: #004d40;
+  }
+  
+  .deposit {
+    color: #757575;
+    font-weight: 400;
+  }
+  
+  .available {
+    font-style: italic;
+    color: #757575;
+  }
+  
+  .listedBy {
+    font-size: 0.9rem;
+    color: #757575;
+  }
+  
+  .description {
+    margin: 0.5rem 0;
+    color: #424242;
+  }
+  
+  .propertyActions button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .viewDetails {
+    background-color: #00796b;
+    color: #fff;
+  }
+  
+  .viewDetails:hover {
+    background-color: #004d40;
+  }
+  
+  .contactOwner {
+    background-color: #fff;
+    color: #00796b;
+    border: 1px solid #00796b;
+  }
+  
+  .contactOwner:hover {
+    background-color: #e0f2f1;
+  }
+  
+  @media (max-width: 768px) {
+    .saleContainer {
+      flex-direction: column;
+    }
+  
+    .filters {
+      display: none;
+      width: 100%;
+      margin-bottom: 2rem;
+      max-height: none; /* Bỏ giới hạn chiều cao trên mobile */
+    }
+  
+    .filters.filtersVisible {
+      display: block;
+    }
+  
+    .propertiesList {
+      width: 100%;
+    }
+  
+    .propertyGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .showFiltersButton {
+      display: block;
+    }
+  
+    .bannerBar {
+      padding: 1rem 3vw;
+    }
+  
+    .bannerTitle {
+      font-size: 1.5rem;
+    }
+  
+    .propertiesCount {
+      font-size: 0.9rem;
+    }
+  
+    .viewToggleButton {
+      width: 36px;
+      height: 36px;
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,78 @@
+.report-pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.report-pagination {
+    display: flex;
+    gap: 8px;
+}
+
+.report-pagination-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.report-pagination-button:hover:not(.report-active):not(:disabled) {
+    background-color: #f0f0f0;
+}
+
+.report-pagination-button.report-active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.report-pagination-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.report-pagination-ellipsis {
+    padding: 8px 12px;
+    color: #666;
+}
+.report-view-toggle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter-label {
+    color: #666;
+    font-size: 1em;
+    font-weight: 500; /* Đồng bộ với font-medium */
+}
+
+.filter-select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .report-view-toggle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

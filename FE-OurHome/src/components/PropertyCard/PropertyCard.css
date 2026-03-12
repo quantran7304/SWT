@@ -1,0 +1,84 @@
+.container {
+  text-align: center;
+  /* padding: 20px; */
+  font-family: Arial, sans-serif;
+}
+
+.property-card-city-container {
+  margin-top: 40px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 280px);
+  justify-content: center;
+  gap: 20px;
+  /*flex-wrap: wrap;*/
+}
+
+.property-card-city {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
+  padding: 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.property-card-city img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  /*display: block;*/
+}
+
+.property-card-city-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: #fff;
+  border-radius: 0 0 18px 0;
+  padding: 12px 18px 10px 16px;
+  min-width: 60%;
+  text-align: left;
+}
+
+.property-card-city-content h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+.property-card-city-content p {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.property-card-city-overlay {
+  padding: 0;
+}
+
+.property-card-city {
+  padding: 0;
+}
+
+.heading-property-city{
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+.subtitle-property-city{
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.3;
+}

@@ -1,0 +1,15 @@
+.admin-chart-widget {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .admin-chart-widget h2 {
+    font-size: 1.4rem;
+    color: #3ca267;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }

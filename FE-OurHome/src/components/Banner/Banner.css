@@ -1,0 +1,386 @@
+.hero-container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #000;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  /* background: rgba(255, 255, 255, 0.85); */
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: left; /* Căn trái để phù hợp với bố cục */
+  max-width: 800px; /* Giới hạn chiều rộng để không bị quá dài */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem; /* Tăng khoảng cách dưới tiêu đề */
+}
+
+.hero-text p {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.1rem; /* Tăng kích thước chữ mô tả */
+  line-height: 1.5; /* Tăng khoảng cách dòng cho dễ đọc */
+}
+
+.search-box {
+  margin-top: 2rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1.5rem; /* Tăng khoảng cách giữa các nút */
+  margin-bottom: 1.5rem;
+  justify-content: flex-start; /* Căn trái để đồng bộ với hero-text */
+}
+
+.tabs button {
+  padding: 0.75rem 2rem; /* Tăng kích thước nút */
+  border: none;
+  background: #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem; /* Tăng kích thước chữ */
+  font-weight: 500; /* Tăng độ đậm */
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start; /* Căn trái để đồng bộ */
+}
+
+.filters input,
+.filters select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 150px;
+  flex: 1 1 150px; /* Đảm bảo độ rộng tối thiểu và co giãn */
+}
+
+.search-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: white;
+  min-width: 50px;
+  flex: 0 0 auto; /* Không co giãn cho nút */
+}
+
+.map-btn,
+.reset-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.map-btn {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.reset-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .tabs {
+    gap: 1rem;
+  }
+
+  .tabs button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters input,
+  .filters select,
+  .search-btn {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tabs button {
+    width: 100%;
+  }
+}
+
+.banner-section {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.landing-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Assets/Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.guide-button {
+  background-color: #1f4b43;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.guide-button:hover {
+  color: #1f4b43;
+}
+.heading-section {
+  margin-bottom: 3rem;
+}
+
+.main-heading {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.search-bar-container {
+  width: 700px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  gap: 6px;
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  color: #333;
+  outline: none;
+}
+
+.search-button {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background-color: #1f4b43;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.search-button:hover {
+  background-color: #145137;
+}
+
+.search-icon {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+
+.property-types {
+  width: 100%;
+  text-align: center;
+}
+
+.property-types-label {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.property-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.property-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.property-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.property-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+
+  .search-bar-container {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .property-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .property-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .search-bar-container {
+    width: 100%;
+    max-width: 95vw;
+  }
+}
+
+.property-button {
+  font-size: 1.3rem;
+}

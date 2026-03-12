@@ -1,0 +1,74 @@
+.users {
+    padding: 20px;
+    background-color: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .users h2 {
+    color: #311b92;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  
+  .view-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .toggle-btn {
+    background-color: #1e3a8a; /* Màu giống với sidebar */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #2a2e80; /* Màu hover đậm hơn, gần với gradient sidebar */
+  }
+  
+  .users-table {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  th {
+    background: #f8f9fa;
+    color: #311b92;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  td {
+    color: #666;
+  }
+  
+  tr:hover td {
+    background: #f8f9fa;
+  }
+  
+  @media (max-width: 768px) {
+    .users-table {
+      overflow-x: scroll;
+    }
+    th, td {
+      min-width: 120px;
+    }
+  }
